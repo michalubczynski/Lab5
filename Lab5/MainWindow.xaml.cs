@@ -26,18 +26,14 @@ namespace Lab5
         {
             InitializeComponent();
             Student s = new Student("Majk1", 5);
-            Student s2 = new Student("Wajk2", 4);
+            Student s2 = new Student("Majk2", 4);
             Student s3 = new Student("Majk3", 3);
-            Student s4 = new Student("Zajk4", 2);
+            Student s4 = new Student("Majk4", 2);
 
             slownik.Add("123", s);
             slownik.Add("234", s2);
             slownik.Add("456", s3);
             slownik.Add("789", s4);
-
-            double w1 = KlasaStatyczna.ZnajdzWiekszy<double>(2.00, 3.00);
-            Student w3 = KlasaStatyczna.ZnajdzWiekszy<Student>(s4, s2);
-            MessageBox.Show(w3.ToString());
 
         }
 
