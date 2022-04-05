@@ -5,6 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public interface IZwiekszany {
+    void Zmien();
+}
+public interface IZmniejszany {
+    void Zmien();
+}
+public interface IPoprawialny {
+    T PobierzLepszWersje<T>(T obiekt);        
+} 
+    
+
 namespace Generyki
 {
     public class Student: IComparable
