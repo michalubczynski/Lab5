@@ -37,7 +37,7 @@ namespace Lab5
 
             double w1 = KlasaStatyczna.ZnajdzWiekszy<double>(2.00, 3.00);
             Student w3 = KlasaStatyczna.ZnajdzWiekszy<Student>(s4, s2);
-            MessageBox.Show(w3.ToString());
+            //MessageBox.Show(w3.ToString());
 
         }
 
@@ -66,6 +66,31 @@ namespace Lab5
             }
             else MessageBox.Show("Nie znaleziono");
 
+        }
+
+        private void btnInterface_Click(object sender, RoutedEventArgs e)
+        {
+
+            Samochod lambo = new Samochod(15);
+            MessageBox.Show(lambo.ToString());
+            lambo.PobierzLepszWersje();
+            MessageBox.Show(lambo.ToString());
+            ((IZwiekszany)lambo).Zmien();
+            MessageBox.Show("Zwiekszono?"+lambo.ToString());
+            ((IZmniejszany)lambo).Zmien();
+            MessageBox.Show("Zwiekszono?" + lambo.ToString());
+        }
+
+        private void btnDodaj_Click(object sender, RoutedEventArgs e)
+        {
+            DodawanieZadan oknoDodaj = new DodawanieZadan();
+            oknoDodaj.ShowDialog();
+        }
+
+        private void btnPobierz_Click(object sender, RoutedEventArgs e)
+        {
+            PobierzZadanie oknoPobierz = new PobierzZadanie();
+            oknoPobierz.ShowDialog();
         }
     }
 }

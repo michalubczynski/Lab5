@@ -13,6 +13,9 @@
         <TextBox x:Name="txtWysokosc" HorizontalAlignment="Left" Margin="571,50,0,0" TextWrapping="Wrap" Text="h:" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtNrAlbumu" HorizontalAlignment="Left" Margin="89,254,0,0" TextWrapping="Wrap" Text="Twoj numer albumu:" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSzukajPoAlbumie" Content="Szukej" HorizontalAlignment="Left" Margin="116,301,0,0" VerticalAlignment="Top" Click="btnSzukajPoAlbumie_Click"/>
+        <Button x:Name="btnInterface" Content="Interface" HorizontalAlignment="Left" Margin="513,321,0,0" VerticalAlignment="Top" Click="btnInterface_Click"/>
+        <Button x:Name="btnPobierz" Content="Pobierz Zadanie" HorizontalAlignment="Left" Margin="538,366,0,0" VerticalAlignment="Top" Click="btnPobierz_Click"/>
+        <Button x:Name="btnDodaj" Content="Dodaj Zadanie" HorizontalAlignment="Left" Margin="440,366,0,0" VerticalAlignment="Top" Click="btnDodaj_Click"/>
 
     </Grid>
 </Window>
